@@ -62,3 +62,11 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap:20 px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display:block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
