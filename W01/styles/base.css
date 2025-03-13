@@ -45,9 +45,10 @@ main {
 /*flexbox for container*/
 .grid-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: start;
 }
 .card {
     background: white;
@@ -66,7 +67,7 @@ main {
 }
 
 .about-me {
-    width:60%;
+    width:55%;
 }
 
 img {
@@ -75,6 +76,32 @@ img {
     display:block;
     margin: 10px auto;
     border-radius: 10px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.card ul li {
+    margin: 5px 0;
+}
+
+.card ul a {
+    display: block;
+    padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .grid-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
 
 footer {
@@ -87,5 +114,10 @@ footer {
 }
 
 footer p{
-    
+    margin: 5pm 0;
+}
+
+#lastmodified {
+    font-size: 12px;
+    opacity: 0.8;
 }
