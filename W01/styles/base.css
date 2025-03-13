@@ -65,8 +65,12 @@ main {
     gap:10 px;
 }
 
+.about-me {
+    width:60%;
+}
+
 img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display:block;
     margin: 10px auto;
@@ -80,4 +84,8 @@ footer {
     padding: 10px;
     margin-top: 20px;
     font-size:14px;
+}
+
+footer p{
+    
 }
