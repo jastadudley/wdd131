@@ -46,7 +46,7 @@ main {
 .grid-container{
     display: flex;
     justify-content: space-between;
-    flex-wrap: rap;
+    flex-wrap: wrap;
     gap: 20px;
     align-items: start;
 }
