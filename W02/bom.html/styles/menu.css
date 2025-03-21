@@ -23,15 +23,14 @@ nav {
 	margin: 1rem auto;
 }
 
-/* small view navigation */
 #menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
 	color: #000;
- 	position: _________;
-	________;
-	________;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
 
 #menu::before {
@@ -64,7 +63,6 @@ nav {
 	font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
 	display: block;
 }
