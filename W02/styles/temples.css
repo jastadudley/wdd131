@@ -49,3 +49,35 @@ navigation li{
 .navigation a:hover{
     text-decoration: underline;
 }
+temple-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1rem;
+    padding: 1rem;
+}
+figure {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #4444;
+}
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: 0.8rem;
+    margin-top: 2rem;
+}
