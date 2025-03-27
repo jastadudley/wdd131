@@ -31,13 +31,14 @@ nav{
 .show {
     display: flex !important;
   }
-#menu{
+#menu {
     font-size: 2rem;
-    background:none;
+    background: none;
     border: none;
     color: white;
     cursor: pointer;
     margin-top: 0.5rem;
+    z-index: 1100;
 }
 .navigation {
     position: absolute;
@@ -61,7 +62,18 @@ nav{
 .navigation.show {
     display: flex;
     transform: translateX(0);
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    background-color: #4b0082;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  }
 .navigation li{
     margin:0.5rem 0;
 }
@@ -118,6 +130,6 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    font-family: 0.8rem;
+    font-size: 0.8rem;
     margin-top: 2rem;
 }

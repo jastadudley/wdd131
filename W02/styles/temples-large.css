@@ -37,8 +37,8 @@ main {
     margin: 0 auto;
     padding: 0 1rem;
 }
-.header-bar h1{
-    font-family: 2rem;
+.header-bar h1 {
+    font-size: 2rem;
     flex-shrink: 0;
 }
 .navigation a {
@@ -48,9 +48,12 @@ main {
     display: inline-block;
     color: white;
     text-decoration: none;
+    transition: transform 0.2s ease;
   }
+  
 .navigation a:hover {
     text-decoration: underline;
     transform: scale(1.05);
-    transition: transform 0.2s ease;
-}
+    background-color: transparent;
+    padding-left: 1.25rem;
+  }
