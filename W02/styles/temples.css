@@ -19,6 +19,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 2rem;
+    position: relative;
 }
 nav{
     display: flex;
@@ -26,6 +28,9 @@ nav{
     gap: 1rem;
     position:relative;
 }
+.show {
+    display: flex !important;
+  }
 #menu{
     font-size: 2rem;
     background:none;
@@ -34,24 +39,44 @@ nav{
     cursor: pointer;
     margin-top: 0.5rem;
 }
-.navigation{
-    list-style: none;
-    display: none;
+.navigation {
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: #4b0082;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #4b0082;
-    padding: 0.5 rem 1rem;
+    padding: 2rem 1rem;
+    list-style: none;
+    gap: 1.2rem;
+    display: none;
+    z-index: 999;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+.navigation.show {
+    display: flex;
+    transform: translateX(0);
 }
 .navigation li{
     margin:0.5rem 0;
 }
-.navigation a{
-    color:white;
-    text-decoration: none;
+.navigation a {
+    color: white;
     font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.5rem 0;
 }
-.navigation a:hover{
-    text-decoration: underline;
+.navigation a:hover {
+    background-color: #36006c;
+    width: 100%;
+    padding-left: 0.5rem;
 }
 .temple-grid{
     display:grid;
@@ -71,6 +96,12 @@ figcaption {
     font-size: 0.9rem;
     color: #4B0082;
     font-weight: 800;
+}
+figure:hover{
+    transform: scale(1.02);
+    box-Shadow: 0 4px 20px  rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 main h1 {
     text-align: center;
