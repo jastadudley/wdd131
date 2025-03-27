@@ -16,7 +16,6 @@ footer {
 h1 {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 main {
 	display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,26 +24,22 @@ main {
 main h2 {
     grid-column: 1 / -1;
 }
-
 h2 {
 	color: navy;
 	text-align: left;
 }
-
 article p {
 	text-align: justify;
 }
-
 .callout {
 	color: #ffffff;
 	background-color: #4B0055;
     padding: 1rem;
     border-radius: 6px;
 }
-
 footer {
 	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: smaller;
-	text-align: right;
+	text-align: left;
 }
