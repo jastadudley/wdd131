@@ -20,11 +20,17 @@ h1 {
 
 main {
 	display: grid;
+    grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+main h2 {
+    grid-column: 1 / -1;
 }
 
 h2 {
 	color: navy;
-	text-align: center;
+	text-align: left;
+    grid-column: 1 / -1;
 }
 
 article p {
@@ -32,8 +38,10 @@ article p {
 }
 
 .callout {
-	color: #777;
+	color: #fff;
 	background-color: #702963;
+    padding: 1rem;
+    border-radius: 6px;
 }
 
 footer {
