@@ -40,43 +40,46 @@ nav{
     margin-top: 0.5rem;
     z-index: 1100;
 }
-.navigation {
-    position: absolute;
-    top: 0;
-    right: auto;
-    left: 0;
-    height: 100vh;
-    width: 60%;
-    background-color: #4b0082;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem 1rem;
-    list-style: none;
-    gap: 1.2rem;
-    display: none;
-    z-index: 999;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%);
-}
-.navigation.show {
-    display: flex;
-    transform: translateX(0);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 60vw;
-    max-width: 100vw;
-    background-color: #4b0082;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem 1rem;
-    z-index: 1000;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-    overflow-x: hidden;
-    overflow-y: auto;
-}
+@media screen and (max-width: 767px) {
+    .navigation {
+        position: absolute;
+        top: 0;
+        right: auto;
+        left: 0;
+        height: 100vh;
+        width: 60%;
+        background-color: #4b0082;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 1rem;
+        list-style: none;
+        gap: 1.2rem;
+        display: none;
+        z-index: 999;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+  
+    .navigation.show {
+        display: flex;
+        transform: translateX(0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60vw;
+        max-width: 100vw;
+        background-color: #4b0082;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 1rem;
+        z-index: 1000;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+  }
 .navigation li{
     margin:0.5rem 0;
 }
@@ -85,7 +88,7 @@ nav{
     font-weight: bold;
     text-decoration: none;
     font-size: 1.1rem;
-    width: calc(100%-1rem);
+    width: calc(100% - 1rem);
     padding: 0.5rem;
     box-sizing: border-box;
 }
