@@ -16,3 +16,7 @@ if (temp <= 50 && speed > 3) {
 } else {
   chill.textContent = "N/A";
 }
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("lastModified").textContent = document.lastModified;

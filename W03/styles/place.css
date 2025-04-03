@@ -4,4 +4,57 @@
       font-size: 1.2rem;
       margin-left: 0.5rem;
     }
-  }
+}
+:root {
+    --primary-color: #003366;
+    --accent-color: #ffcc00;
+    --bg-color: #f9f9f9;
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-stack);
+    background-color: var(--bg-color);
+    color: #333;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 1rem;
+}
+  
+h1, h2 {
+    color: var(--primary-color);
+}
+  
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (min-width: 768px) {
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+  
+    .hero {
+      grid-column: 1 / -1;
+    }
+  
+    #weather, .facts {
+      padding: 1rem;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  
+    footer {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+}
