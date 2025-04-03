@@ -1,0 +1,7 @@
+@media (min-width: 800px) {
+    h2::after {
+      content: " ⛅";
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+    }
+  }
