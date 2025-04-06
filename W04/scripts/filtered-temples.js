@@ -53,21 +53,21 @@ const temples = [
     location: "Tucson, Arizona, United States",
     dedicated: "2017, August, 13",
     area: 38000,
-    imageUrl:"04/images/tucson-arizona.jpg"
+    imageUrl:"W04/images/tucson-arizona.jpg"
   },
   {
     templeName: "Gilbert Arizona",
     location: "Gilbert, Arizona, United States",
     dedicated: "2014, March, 2",
     area: 85700,
-    imageUrl:"04/images/gilbert-arizona.jpg"
+    imageUrl:"W04/images/gilbert-arizona.jpg"
   },
   {
     templeName: "Salt Lake City",
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl:"04/images/salt-lake-city.jpg"
+    imageUrl:"W04/images/salt-lake-city.jpg"
   }
 ];
 

@@ -31,7 +31,8 @@ nav{
 .show {
     display: flex !important;
   }
-#menu {
+  
+  #menu {
     font-size: 2rem;
     background: none;
     border: none;
@@ -39,32 +40,33 @@ nav{
     cursor: pointer;
     margin-top: 0.5rem;
     z-index: 1100;
-}
-@media screen and (max-width: 767px) {
+  }
+  
+  @media screen and (max-width: 767px) {
     .navigation {
-        position: absolute;
-        top: 0;
-        right: auto;
-        left: 0;
-        height: 100vh;
-        width: 60%;
-        background-color: #4b0082;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem 1rem;
-        list-style: none;
-        gap: 1.2rem;
-        display: none;
-        z-index: 999;
-        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease-in-out;
-        transform: translateX(-100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 60%;
+      background-color: #4b0082;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem 1rem;
+      list-style: none;
+      gap: 1.2rem;
+      display: flex;
+      z-index: 999;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%);
+      overflow-y: auto;
     }
-}
-.navigation.show {
-    display: flex !important;
-    transform: translateX(0);
-}
+  
+    .navigation.show {
+      transform: translateX(0);
+    }
+  }
 .navigation li{
     margin:0.5rem 0;
 }
