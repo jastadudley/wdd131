@@ -61,35 +61,39 @@ const temples = [
 const menuButton = document.querySelector("#menu");
 const nav = document.querySelector(".navigation");
 
-menuButton("click", () => {
+menuButton.addEventListener("click", () => {
   nav.classList.toggle("show");
 });
 
 function displayTemples(templesArray) {
-  const container = document.querySelector(".temple-grid")
+  const container = document.querySelector(".temple-grid");
+  container.innerHTML = "";
+  templesArray.forEach((temple) => {
+    const card = document.createElement("section");
 
-  templesArray.forEach(temple) => {
-    const card = document.createelement("section");
+    const name = document.createElement("h2");
+    name.textContent = temple.templeName;
 
-    const name = document.createelement("h2");
-      name.textContent = temple.templeName;
+    const location = document.createElement("p");
+    location.innerHTML = `<strong>Location:</strong> ${temple.location}`;
 
-    const location = document.createelement("p")
-      location.innerHTML = <strong>Location:</strong> ${temple.location};
+    const dedicated = document.createElement("p");
+    dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
 
-    const dedicated = document.createelement("p");
-      dedicated.innerHTML = <strong>Dedicated:</strong> ${temple.dedicated};
+    const area = document.createElement("p");
+    area.innerHTML = `<strong>Size:</strong> ${temple.area.toLocaleString()} sq ft`;
 
-    const image = document.createelement("img");
-    image.setAttribute("srcc", temple.imageUrl);
+    const image = document.createElement("img");
+    image.setAttribute("src", temple.imageUrl);
     image.setAttribute("alt", temple.templeName);
     image.setAttribute("loading", "lazy");
-    image.setAttribute("legnth", "230");
+    image.setAttribute("width", "250");
 
     card.appendChild(name);
-    card.appendChild(location)
+    card.appendChild(location);
     card.appendChild(dedicated);
     card.appendChild(image);
 
     container.appendChild(card);
-  };
+  });
+}
