@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap');
+
+:root {
+    --manor-blue: #6ca0a9;
+    --sage: #a3b18a;
+    --cream: #fdfcf7;
+    --taupe: #857c74;
+    --shadow: rgba(0, 0, 0, 0.04);
+  }
+  
+  body {
+    background-color: var(--cream);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--taupe);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--manor-blue);
+  }
+  
+  header {
+    background-color: var(--manor-blue);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px var(--shadow);
+  }
+  
+  section {
+    background-color: white;
+    padding: 1.5rem;
+    border-left: 6px solid var(--sage);
+    border-radius: 8px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 6px var(--shadow);
+    max-width: 850px;
+  }
+  
+ul {
+  padding-left: 1.5rem;
+}
+
+footer {
+  background-color: var(--sage);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shadow);
+}
