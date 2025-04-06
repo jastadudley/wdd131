@@ -100,3 +100,25 @@ function displayTemples(templesArray) {
   });
 }
 displayTemples(temples);
+
+const templeGrid = document.querySelector(".temple-grid");
+
+function renderTemples(templesArray) {
+  templeGrid.innerHTML = ""; // Clear grid
+
+  templesArray.forEach((temple) => {
+    const card = document.createElement("figure");
+
+    card.innerHTML = `
+      <h2>${temple.templeName}</h2>
+      <p><strong>Location:</strong> ${temple.location}</p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+      <p><strong>Size:</strong> ${temple.area.toLocaleString()} sq ft</p>
+      <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}">
+    `;
+
+    templeGrid.appendChild(card);
+  });
+}
+
+renderTemples(temples);
