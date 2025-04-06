@@ -43,33 +43,34 @@ nav{
   }
   
   @media screen and (max-width: 767px) {
-    .navigation {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 60%;
-      background-color: #4b0082;
+    nav {
       flex-direction: column;
-      align-items: flex-start;
-      padding: 2rem 1rem;
+      align-items: flex-end;
+      width: 100%;
+    }
+  
+    .navigation {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
       list-style: none;
-      gap: 1.2rem;
-      display: flex;
-      z-index: 999;
-      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(-100%);
-      overflow-y: auto;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      background-color: #4b0082;
+      display: none;
     }
   
     .navigation.show {
-      transform: translateX(0);
+      display: flex;
+    }
+  
+    #menu {
+      display: block;
+      align-self: flex-end;
     }
   }
-.navigation li{
-    margin:0.5rem 0;
-}
+
 .navigation a {
     color: white;
     font-weight: bold;
