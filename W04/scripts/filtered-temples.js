@@ -68,6 +68,7 @@ menuButton.addEventListener("click", () => {
 function displayTemples(templesArray) {
   const container = document.querySelector(".temple-grid");
   container.innerHTML = "";
+
   templesArray.forEach((temple) => {
     const card = document.createElement("section");
 
@@ -87,13 +88,15 @@ function displayTemples(templesArray) {
     image.setAttribute("src", temple.imageUrl);
     image.setAttribute("alt", temple.templeName);
     image.setAttribute("loading", "lazy");
-    image.setAttribute("width", "250");
+    image.setAttribute("width", "300");
 
     card.appendChild(name);
     card.appendChild(location);
     card.appendChild(dedicated);
+    card.appendChild(area);
     card.appendChild(image);
 
     container.appendChild(card);
   });
 }
+displayTemples(temples);
