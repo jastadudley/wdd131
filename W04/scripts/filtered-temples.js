@@ -53,24 +53,21 @@ const temples = [
     location: "Tucson, Arizona, United States",
     dedicated: "2017, August, 13",
     area: 38000,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tucson-arizona/400x250/tucson-arizona-temple-lds-1782442-wallpaper.jpg"
+    imageUrl:"https://www.churchofjesuschrist.org/imgs/7dfc9ae6db61ed11e1c5af25c13d6ed84e1a57c7/full/320%2C/0/default"
   },
   {
     templeName: "Gilbert Arizona",
     location: "Gilbert, Arizona, United States",
     dedicated: "2014, March, 2",
     area: 85700,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/gilbert-arizona/400x250/gilbert-arizona-temple-lds-1401619-wallpaper.jpg"
+    imageUrl:"https://www.churchofjesuschrist.org/imgs/8d7a1167b62c11ed8262eeeeac1f8b7bb566e3e5/full/320%2C/0/default"
   },
   {
     templeName: "Salt Lake City",
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-utah/400x250/salt-lake-temple-lds-449874-wallpaper.jpg"
+    imageUrl:"https://www.churchofjesuschrist.org/imgs/7b1b4de97b4c11ec8aefeeeeac1f8b7bb566e3e5/full/320%2C/0/default"
   }
 ];
 
