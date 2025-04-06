@@ -1,6 +1,6 @@
-let Course = {
+let aCourse = {
     code: "WDD131",
-    title: "Dynamic Web Fundamentals"
+    title: "Dynamic Web Fundamentals",
     credits: 2,
     sections: [
       {
@@ -11,30 +11,32 @@ let Course = {
       {
         section: 2,
         enrolled: 18,
-        instructor: "Sitser Dudley"
+        instructor: "Sister Dudley"
       }
     ]
   };
   
   function setCourseInfo(course) {
     const heading = document.getElementById("courseName");
-    heading.textContent = ${course.code}: ${course.title}
+    heading.textContent = `${course.code}: ${course.title}`;
   }
   
   function outputSections(course) {
     const tableBody = document.getElementById("sections");
-    TableBody.innerHTML = ""; 
+    tableBody.innerHTML = "";
   
     course.sections.forEach((section) => {
       const row = document.createElement("tr");
   
       row.innerHTML = `
-        <td>${sectionSsection}</td>
+        <td>${section.section}</td>
+        <td>${section.enrolled}</td>
+        <td>${section.instructor}</td>
       `;
   
-      tableBody.appendChild(row)
+      tableBody.appendChild(row);
     });
   }
   
- 
-  setCourseInfo(allCourse);
+  setCourseInfo(aCourse);
+  outputSections(aCourse);
