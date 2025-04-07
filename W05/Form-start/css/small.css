@@ -50,6 +50,83 @@ main {
 }
 
 
+
+
+/*-----------------------------------FORM STYLING-----------------------------------*/
+.wf1 feildset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%
+}
+.wf1 legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    Font-size: .9rem;
+}
+.wf1 div {
+    padding-top: 1rem;
+    color: #445ba9;
+    Font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"]
+
+{
+    background-color: deeppink;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color:#555;
+    width: 100%;
+    Max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    display: inline-block;
+    margin: 2rem 0 3rem 0;
+    padding: 0.6rem 1.2rem;
+    background-color: white;
+    color: #b4001a;
+    border: 2px solid #b4001a;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .wf1 input:required {
+    border-left: solid 8px red;
+  }
+
+  .wf1 input:required:valid {
+    border-left: solid 8px green;
+  }
+
+
+
+
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ddd;
