@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p>You have submitted <span id="reviewCount">0</span> reviews.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 | Your Name | Last Modified: <span id="modified"></span>
+  </footer>
+
+  <script>
+
+    let count = Number(localStorage.getItem('reviewCount')) || 0;
+    count += 1;
+    localStorage.setItem('reviewCount', count);
+    document.getElementById('reviewCount').textContent = count;
+
+     
+    document.getElementById('modified').textContent = document.lastModified;
+  </script>
+</body>
+</html>
