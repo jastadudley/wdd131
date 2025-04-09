@@ -14,36 +14,80 @@
     <main>
         <form method="get" action="review.html">
             <fieldset>
-                <legend>Product Review</legend>
-          
+              <legend>Product Review</legend>
+        
+
+              <label for="productName">Product:</label>
+              <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+
+
+
+
+
+
+
+
+
                 
-                <label for="productName">Product:</label>
-          
-                
-                <p>Rating:</p>
-                <div id="ratingGroup">
-                  
-                </div>
-          
-                
-                <label for="installDate">Date of Installation:</label>
-          
-    
-                <p>Useful Features:</p>
-          
-                
-                <label for="review">Written Review:</label>
-                <textarea id="review" name="review" rows="5" cols="5" placeholder="Write here:"></textarea>
-          
-                
-                <label for="username">Your Name:</label>
-                <input type="text" id="username" name="username">
-          
-                
-                <input type="enter" value="enter">
-                
+              </select>
+        
+
+
+              <p>Rating:</p>
+              <div id="ratingGroup">
+                <input type="radio" id="rate1" name="rating" value="1" required>
+                <label for="rate1">1 ☆</label>
+        
+                <input type="radio" id="rate2" name="rating" value="2">
+                <label for="rate2">2 ☆☆</label>
+        
+                <input type="radio" id="rate3" name="rating" value="3">
+                <label for="rate3">3 ☆☆☆</label>
+        
+                <input type="radio" id="rate4" name="rating" value="4">
+                <label for="rate4">4 ☆☆☆☆</label>
+        
+                <input type="radio" id="rate5" name="rating" value="5">
+                <label for="rate5">5 ☆☆☆☆☆</label>
+              </div>
+        
+
+
+              <label for="installDate">Date of Installation:</label>
+              <input type="date" id="installDate" name="installDate" required>
+        
+
+
+              <p>Useful Features (select all that apply):</p>
+              <input type="checkbox" id="feature1" name="features" value="durable">
+              <label for="feature1">Durable</label>
+        
+              <input type="checkbox" id="feature2" name="features" value="easy-install">
+              <label for="feature2">Easy to Install</label>
+        
+              <input type="checkbox" id="feature3" name="features" value="compact">
+              <label for="feature3">Compact</label>
+        
+              <input type="checkbox" id="feature4" name="features" value="affordable">
+              <label for="feature4">Affordable</label>
+        
+
+
+              <label for="review">Written Review:</label>
+              <textarea id="review" name="review" rows="5" cols="33" placeholder="Write your review here..."></textarea>
+        
+
+
+              <label for="username">Your Name:</label>
+              <input type="text" id="username" name="username">
+        
+
+
+              <input type="submit" value="Submit Review">
+
             </fieldset>
-        </form>
+          </form>
     </main>
 
     <footer>
