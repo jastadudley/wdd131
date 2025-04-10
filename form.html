@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Review</title>
-  <link rel="stylesheet" href="styles/form.css" />
+  <link rel="stylesheet" href="styles/form.css">
+  <meta name="description" content="Submit a review for your recent product installation. Rate features, leave comments, and share your experience.">
+  <meta name="author" content="Jasta Noel McClendon Dudley">
 </head>
 <body>
     <header>
@@ -20,16 +22,6 @@
               <label for="productName">Product:</label>
               <select id="productName" name="productName" required>
                 <option value="" disabled selected>Select a Product ...</option>
-
-
-
-
-
-
-
-
-
-                
               </select>
         
 
@@ -60,22 +52,29 @@
 
 
               <p>Useful Features (select all that apply):</p>
+              <div class="checkbox-group">
+              <div class="checkbox-item">
               <input type="checkbox" id="feature1" name="features" value="durable">
               <label for="feature1">Durable</label>
-        
+              </div>
+              <div class="checkbox-item">
               <input type="checkbox" id="feature2" name="features" value="easy-install">
               <label for="feature2">Easy to Install</label>
-        
+              </div>
+              <div class="checkbox-item">
               <input type="checkbox" id="feature3" name="features" value="compact">
               <label for="feature3">Compact</label>
-        
+              </div>
+              <div class="checkbox-item">
               <input type="checkbox" id="feature4" name="features" value="affordable">
               <label for="feature4">Affordable</label>
+              </div>
+              </div>
         
 
 
               <label for="review">Written Review:</label>
-              <textarea id="review" name="review" rows="5" cols="33" placeholder="Write your review here..."></textarea>
+              <textarea id="review" name="review" rows="5" cols="33" placeholder="Type your review here! What did you like about the product? Dislike? What should others knwo before they purchase..."></textarea>
         
 
 
@@ -84,7 +83,7 @@
         
 
 
-              <input type="submit" value="Submit Review">
+              <input type="submit" name="submit" value="Submit Your Product Review">
 
             </fieldset>
           </form>
@@ -94,7 +93,7 @@
       &copy; 2025 | Jasta Dudley | Last Modified: <span id="modified"></span>
     </footer>
   
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
     <script>
       document.getElementById('modified').textContent = document.lastModified;
     </script>
