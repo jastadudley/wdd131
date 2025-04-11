@@ -42,5 +42,9 @@
     <p>&copy; <span id="2025"></span> Jasta Dudley | Arizona</p>
     <p id="lastModified"></p>
   </footer>
+  <script>
+    document.getElementById("2025").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  </script>
 </body>
 </html>
