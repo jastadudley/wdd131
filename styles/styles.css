@@ -2,18 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Jasta Noel McClendon Dudley" />
-        <meta name="description" content="A heartfelt site for my parents to share memories, contact info, and more." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jasta Noel McClendon Dudley">
+        <meta name="description" content="A heartfelt site for my parents to share memories, contact info, and more.">
         <title>Home | A Caring Manor</title>
-        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="styles/styles.css">
         <script src="scripts/main.js" defer></script>
     </head>
 
-
-
     <body>
+        <header>
+            <h1>Welcome to Our Family Page</h1>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+    
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Jasta Dudley | <a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </footer>
+
     </body>
-
-
 </html>
