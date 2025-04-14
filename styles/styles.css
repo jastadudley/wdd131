@@ -229,10 +229,15 @@ input[type="submit"] {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  align-self: flex-start;
-  transition: background-color 0.3s ease;
+  align-self: center;
+  display: block;
+  margin: 0 auto;
 }
 
 input[type="submit"]:hover {
   background-color: #389f95;
+}
+
+iframe {
+  border: none;
 }
