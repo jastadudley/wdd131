@@ -13,8 +13,6 @@ localStorage.setItem("visitCount", visitCount);
 
 
 const welcomeMessages = [
-  "Welcome back!",
-  "So glad you're here again! 💖",
   "Thanks for visiting us again! 🏡"
 ];
 
