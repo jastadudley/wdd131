@@ -13,7 +13,9 @@ localStorage.setItem("visitCount", visitCount);
 
 
 const welcomeMessages = [
-  "Thanks for visiting us again! 🏡"
+  "Thanks for visiting us again! 🏡",
+  "Welcome back! We're so glad to have you.",
+  "Welcome in!"
 ];
 
 let messageIndex = (visitCount - 1) % welcomeMessages.length;
