@@ -20,3 +20,6 @@ const welcomeMessages = [
 
 let messageIndex = (visitCount - 1) % welcomeMessages.length;
 console.log(`${welcomeMessages[messageIndex]} This is visit #${visitCount}.`);
+
+document.getElementById("visitMessage").textContent =
+  `${welcomeMessages[messageIndex]} This is visit #${visitCount}.`;
